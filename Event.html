@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Bright Future Academy</title>
+    <meta name="description" content="Discover upcoming events, activities, and important dates at Bright Future Academy.">
+    <!-- Reuse existing CSS links from index.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header (reused from homepage with active state) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    Bright Future Academy
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Academic.html">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Teacher.html">Faculty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Event.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact US.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-sm btn-primary" href="#">
+                                <i class="fas fa-user-graduate me-1"></i> Apply Now
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="events-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">School Events</h1>
+                    <p class="lead mb-4">Discover our vibrant calendar of academic, cultural, and sports activities</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Events</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Upcoming Events</h2>
+                    <p class="lead">Mark your calendars for these important dates</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Event 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="event-card h-100">
+                        <div class="event-date bg-primary text-white">
+                            <div class="event-day">15</div>
+                            <div class="event-month">Jul</div>
+                        </div>
+                        <img src="assets/Parents-Teachers Meeting.jpg" class="event-img" alt="Parents-Teachers Meeting">
+                        <div class="event-content">
+                            <div class="event-category">Academic</div>
+                            <h3 class="event-title">Parents-Teachers Meeting</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock me-1"></i> 9:00 AM - 12:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> School Auditorium</span>
+                            </div>
+                            <p class="event-description">Quarterly meeting to discuss student progress and academic plans with teachers and parents.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card h-100">
+                        <div class="event-date bg-secondary text-white">
+                            <div class="event-day">20</div>
+                            <div class="event-month">Jul</div>
+                        </div>
+                        <img src="assets/Annual Sports Day1.jpg" class="event-img" alt="Annual Sports Day">
+                        <div class="event-content">
+                            <div class="event-category">Sports</div>
+                            <h3 class="event-title">Annual Sports Day</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock me-1"></i> 8:00 AM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> School Ground</span>
+                            </div>
+                            <p class="event-description">A day full of athletic competitions and team spirit for all grades.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card h-100">
+                        <div class="event-date bg-accent text-white">
+                            <div class="event-day">02</div>
+                            <div class="event-month">Aug</div>
+                        </div>
+                        <img src="assets/Independence Day Celebration.jpg" class="event-img" alt="Independence Day Celebration">
+                        <div class="event-content">
+                            <div class="event-category">Cultural</div>
+                            <h3 class="event-title">Independence Day Celebration</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-clock me-1"></i> 8:00 AM - 10:00 AM</span>
+                                <span><i class="fas fa-map-marker-alt me-1"></i> School Premises</span>
+                            </div>
+                            <p class="event-description">Patriotic celebrations with flag hoisting, cultural performances, and speeches.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt me-2"></i> View Full Calendar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Categories Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Event Categories</h2>
+                    <p class="lead">Explore our diverse range of school events</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="category-card text-center p-4 h-100">
+                        <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Academic</h3>
+                        <p>Science fairs, competitions, workshops, and educational seminars.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card text-center p-4 h-100">
+                        <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Cultural</h3>
+                        <p>Annual day, music competitions, drama performances, and art exhibitions.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card text-center p-4 h-100">
+                        <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Sports</h3>
+                        <p>Annual sports day, inter-school competitions, and athletic meets.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card text-center p-4 h-100">
+                        <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Parent-teacher meetings, alumni gatherings, and community service projects.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Highlights -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Past Events Highlights</h2>
+                    <p class="lead">Relive memorable moments from our recent events</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="past-event-card">
+                        <div class="past-event-img">
+                            <img src="assets/Science Fair.jpg" alt="Science Fair 2023">
+                            <div class="past-event-date">May 15, 2023</div>
+                        </div>
+                        <div class="past-event-content">
+                            <h3>Science Fair 2023</h3>
+                            <p>Students showcased innovative projects and experiments at our annual science fair.</p>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="past-event-card">
+                        <div class="past-event-img">
+                            <img src="assets/Annual Day Celebration.jpg" alt="Annual Day Celebration">
+                            <div class="past-event-date">Apr 28, 2023</div>
+                        </div>
+                        <div class="past-event-content">
+                            <h3>Annual Day Celebration</h3>
+                            <p>Colorful cultural performances marked our 28th Annual Day celebrations.</p>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="past-event-card">
+                        <div class="past-event-img">
+                            <img src="assets/Graduation Ceremony.jpg" alt="Graduation Ceremony">
+                            <div class="past-event-date">Mar 10, 2023</div>
+                        </div>
+                        <div class="past-event-content">
+                            <h3>Graduation Ceremony</h3>
+                            <p>Class of 2023 celebrated their achievements at the graduation ceremony.</p>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="gallery.html" class="btn btn-outline-primary">
+                    <i class="fas fa-images me-2"></i> View More in Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Event Calendar</h2>
+                    <p class="lead">Browse our events by month</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="calendar-container bg-white p-4 rounded shadow-sm">
+                        <div class="calendar-header d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="mb-0">July 2023</h3>
+                            <div>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i class="fas fa-chevron-left"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-grid">
+                            <div class="calendar-weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            
+                            <div class="calendar-days">
+                                <div class="empty-day"></div>
+                                <div class="empty-day"></div>
+                                <div class="empty-day"></div>
+                                <div class="empty-day"></div>
+                                <div class="empty-day"></div>
+                                <div class="empty-day"></div>
+                                <div class="calendar-day">1</div>
+                                <div class="calendar-day">2</div>
+                                <div class="calendar-day">3</div>
+                                <div class="calendar-day">4</div>
+                                <div class="calendar-day">5</div>
+                                <div class="calendar-day">6</div>
+                                <div class="calendar-day">7</div>
+                                <div class="calendar-day">8</div>
+                                <div class="calendar-day">9</div>
+                                <div class="calendar-day">10</div>
+                                <div class="calendar-day">11</div>
+                                <div class="calendar-day">12</div>
+                                <div class="calendar-day">13</div>
+                                <div class="calendar-day">14</div>
+                                <div class="calendar-day event-day">15
+                                    <div class="event-dot bg-primary"></div>
+                                </div>
+                                <div class="calendar-day">16</div>
+                                <div class="calendar-day">17</div>
+                                <div class="calendar-day">18</div>
+                                <div class="calendar-day">19</div>
+                                <div class="calendar-day event-day">20
+                                    <div class="event-dot bg-secondary"></div>
+                                </div>
+                                <div class="calendar-day">21</div>
+                                <div class="calendar-day">22</div>
+                                <div class="calendar-day">23</div>
+                                <div class="calendar-day">24</div>
+                                <div class="calendar-day">25</div>
+                                <div class="calendar-day">26</div>
+                                <div class="calendar-day">27</div>
+                                <div class="calendar-day">28</div>
+                                <div class="calendar-day">29</div>
+                                <div class="calendar-day">30</div>
+                                <div class="calendar-day">31</div>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-legend mt-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="event-dot bg-primary me-2"></div>
+                                <span>Parents-Teachers Meeting - Jul 15</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="event-dot bg-secondary me-2"></div>
+                                <span>Annual Sports Day - Jul 20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Get Involved in Our Events</h2>
+                    <p class="lead mb-5">Participate, volunteer, or just come to enjoy our vibrant school community</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-calendar-check me-2"></i> RSVP for Events
+                        </a>
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-hand-holding-heart me-2"></i> Volunteer
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary">
+                            <i class="fas fa-question-circle me-2"></i> Ask Questions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (reused from homepage) -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Bright Future Academy
+                    </h5>
+                    <p>Committed to excellence in education and the holistic development of every student.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="index.html#academics">Academics</a>
+                        <a href="index.html#facilities">Facilities</a>
+                        <a href="events.html">Events</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Academics</h5>
+                    <div class="footer-links">
+                        <a href="#">Admissions</a>
+                        <a href="#">Curriculum</a>
+                        <a href="#">School Calendar</a>
+                        <a href="#">Exam Schedule</a>
+                        <a href="#">Results</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for school updates and news.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Bright Future Academy. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links d-inline">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (reused from homepage) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Simple calendar navigation (for demo purposes)
+        document.querySelectorAll('.calendar-header button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('In a complete implementation, this would navigate between months.');
+            });
+        });
+        
+        // Event day click handler
+        document.querySelectorAll('.event-day').forEach(day => {
+            day.addEventListener('click', function() {
+                const eventDate = this.textContent.trim();
+                alert(`Showing details for event on July ${eventDate}`);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIFF SLIET</title>
+    <!-- Add these in the head section after your other CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    SIFF SLIET
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                    
+                            <li class="nav-item dropdown" id="sectorDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sector
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-robot me-2"></i>AI and Agriculture</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-laptop-code me-2"></i>Technology</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-heartbeat me-2"></i>Healthcare</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Announcement</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Event.html">Events</a>
+                        </li>
+                        
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-sm btn-primary" href="#">
+                                <i class="fas fa-envelope me-1"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-pattern"></div>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 hero-content" data-aos="fade-right">
+                            <h1 class="hero-title">Shaping Future Leaders Through Excellence</h1>
+                            <p class="hero-subtitle">Providing quality education since 1995 with a focus on holistic development</p>
+                            <div class="d-flex flex-wrap">
+                                <a href="contact US.html" class="btn btn-primary hero-btn">
+                                    <i class="fas fa-envelope me-2"></i> Contact Us
+                                </a>
+                                <a href="about.html" class="btn btn-outline-light hero-btn">
+                                    <i class="fas fa-play-circle me-2"></i> Watch Video
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                            <img src="assets/H1.jpeg" alt="Students learning" class="img-fluid rounded shadow-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 hero-content" data-aos="fade-right">
+                            <h1 class="hero-title">Innovative Learning Environment</h1>
+                            <p class="hero-subtitle">State-of-the-art facilities for 21st century education</p>
+                            <div class="d-flex flex-wrap">
+                                <a href="Academic.html" class="btn btn-primary hero-btn">
+                                    <i class="fas fa-book-open me-2"></i> Our Programs
+                                </a>
+                                <a href="gallery.html" class="btn btn-outline-light hero-btn">
+                                    <i class="fas fa-images me-2"></i> View Gallery
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                            <img src="assets/H1.jpeg" alt="School facilities" class="img-fluid rounded shadow-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 hero-content" data-aos="fade-right">
+                            <h1 class="hero-title">Join Our Community</h1>
+                            <p class="hero-subtitle">Applications now open for the 2023-2024 academic year</p>
+                            <div class="d-flex flex-wrap">
+                                <a href="#admissions" class="btn btn-primary hero-btn">
+                                    <i class="fas fa-user-graduate me-2"></i> Apply Now
+                                </a>
+                                <a href="Event.html" class="btn btn-outline-light hero-btn">
+                                    <i class="fas fa-calendar-alt me-2"></i> Upcoming Events
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                            <img src="assets/H1.jpeg" alt="Students together" class="img-fluid rounded shadow-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Ticker Section -->
+<!-- News Ticker Section -->
+<div class="news-ticker-container py-2" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color))">
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <div class="ticker-label me-3">
+                <span class="badge bg-white text-primary">
+                    <i class="fas fa-bullhorn me-1"></i> Latest News
+                </span>
+            </div>
+            <div class="ticker-content overflow-hidden">
+                <div id="newsTicker" class="ticker-items">
+                    <div class="ticker-item">School wins regional science competition - <a href="#" class="text-white fw-bold hover-underline">Read more</a></div>
+                    <div class="ticker-item">New sports complex to open next month - <a href="#" class="text-white fw-bold hover-underline">Details</a></div>
+                    <div class="ticker-item">Admissions for 2023-24 now open - <a href="#" class="text-white fw-bold hover-underline">Apply now</a></div>
+                    <div class="ticker-item">Annual day celebration on July 15th - <a href="#" class="text-white fw-bold hover-underline">View schedule</a></div>
+                </div>
+            </div>
+            <div class="ticker-controls ms-3 d-none d-md-block">
+                <button class="btn btn-sm btn-ticker-pause text-white">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-tractor"></i>
+                        </div>
+                        <h3>AI Heal Agriculture</h3>
+        <p>Our innovative program combines AI technology with sustainable agriculture practices to solve real-world food production challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3>Technology</h3>
+        <p>Our faculty includes industry-leading tech professionals specializing in AI, robotics, and software development with real-world experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+        <p>Advanced medical labs, telemedicine suites, and wellness centers supporting both physical and mental health development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">About Our Company</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="assets/Ab1.jpeg" alt="School building" class="img-fluid about-img" loading="lazy">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-3">Welcome to SIFF SLIET</h3>
+                    <p>Established in 1995, SIFF SLIET has been a beacon of excellence in education,
+                        nurturing young minds to become responsible global citizens.</p>
+                    <p>Our mission is to provide a stimulating learning environment that encourages students to realize
+                        their full potential - academically, socially, and personally.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <h4 class="text-primary">1500+</h4>
+                            <p>Students</p>
+                        </div>
+                        <div class="me-4">
+                            <h4 class="text-primary">85+</h4>
+                            <p>Faculty Members</p>
+                        </div>
+                        <div>
+                            <h4 class="text-primary">25+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Academics Preview</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <h4>Primary School</h4>
+                            <p>Grades 1-5 with a focus on foundational skills and joyful learning.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Middle School</h4>
+                            <p>Grades 6-8 with project-based learning and skill development.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h4>High School</h4>
+                            <p>Grades 9-10 with specialized streams and career guidance.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h4>Senior Secondary</h4>
+                            <p>Grades 11-12 with Science, Commerce and Humanities streams.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Admissions</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h3 class="mb-4">Key Dates & Information</h3>
+                    <div class="admission-dates mb-4">
+                        <div class="d-flex mb-3">
+                            <div class="date-box bg-primary text-white text-center me-3">
+                                <div class="month">Jan</div>
+                                <div class="day">15</div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Admissions Open</h5>
+                                <p class="mb-0">Application process begins for all grades</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="date-box bg-primary text-white text-center me-3">
+                                <div class="month">Mar</div>
+                                <div class="day">31</div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Application Deadline</h5>
+                                <p class="mb-0">Last date to submit applications</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="date-box bg-primary text-white text-center me-3">
+                                <div class="month">Apr</div>
+                                <div class="day">15</div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Results Announced</h5>
+                                <p class="mb-0">Admission decisions communicated</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-4 mb-3">Eligibility Criteria</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Age-appropriate for the
+                            grade level</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Previous academic records
+                            (for Grades 2-12)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Entrance assessment for
+                            certain grades</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Interview with parents
+                            and student (if required)</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4">Admission Process</h3>
+                    <div class="process-steps">
+                        <div class="step mb-4">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Submit Application</h5>
+                                <p>Complete the online application form or download and submit the physical form.</p>
+                            </div>
+                        </div>
+                        <div class="step mb-4">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Assessment</h5>
+                                <p>Students may be required to take an entrance assessment depending on grade level.</p>
+                            </div>
+                        </div>
+                        <div class="step mb-4">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Interview</h5>
+                                <p>Selected candidates will be invited for an interview with the admissions committee.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Admission Decision</h5>
+                                <p>Final decisions will be communicated via email and postal mail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap mt-4">
+                        <a href="#" class="btn btn-primary me-3 mb-3">
+                            <i class="fas fa-user-graduate me-2"></i> Apply Now
+                        </a>
+                        <a href="#" class="btn btn-outline-primary mb-3">
+                            <i class="fas fa-file-download me-2"></i> Download Form
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News & Events Section -->
+    <section id="news-events" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5" data-aos="fade-up">News & Events</h2>
+            <div class="row g-4">
+                <!-- News Column -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                        <h3 class="mb-4 pb-2 border-bottom"><i class="fas fa-newspaper me-2 text-primary"></i>Latest
+                            News</h3>
+                        <div class="news-list">
+                            <div class="news-item mb-4 pb-3 border-bottom">
+                                <div class="d-flex">
+                                    <div class="date-box bg-primary text-white text-center me-3">
+                                        <div class="month">Jun</div>
+                                        <div class="day">15</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">School Wins Regional Science Fair</h5>
+                                        <p class="mb-2">Our students secured first place in the annual regional science
+                                            competition.</p>
+                                        <a href="#" class="text-primary small">Read more <i
+                                                class="fas fa-chevron-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item mb-4 pb-3 border-bottom">
+                                <div class="d-flex">
+                                    <div class="date-box bg-primary text-white text-center me-3">
+                                        <div class="month">May</div>
+                                        <div class="day">28</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">New Sports Complex Inauguration</h5>
+                                        <p class="mb-2">The state-of-the-art sports facility was inaugurated by the
+                                            District Education Officer.</p>
+                                        <a href="#" class="text-primary small">Read more <i
+                                                class="fas fa-chevron-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="d-flex">
+                                    <div class="date-box bg-primary text-white text-center me-3">
+                                        <div class="month">May</div>
+                                        <div class="day">10</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Annual Day Celebration Highlights</h5>
+                                        <p class="mb-2">The school celebrated its 28th Annual Day with cultural
+                                            performances.</p>
+                                        <a href="#" class="text-primary small">Read more <i
+                                                class="fas fa-chevron-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-outline-primary">View All News</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Column -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                        <h3 class="mb-4 pb-2 border-bottom"><i
+                                class="fas fa-calendar-alt me-2 text-secondary"></i>Upcoming Events</h3>
+                        <div class="events-list">
+                            <div class="event-item mb-4 pb-3 border-bottom">
+                                <div class="d-flex">
+                                    <div class="date-box bg-secondary text-white text-center me-3">
+                                        <div class="month">Jul</div>
+                                        <div class="day">05</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Parents-Teachers Meeting</h5>
+                                        <p class="mb-1 text-muted"><i class="far fa-clock me-1"></i> 9:00 AM - 12:00 PM
+                                        </p>
+                                        <p class="mb-0 text-muted"><i class="fas fa-map-marker-alt me-1"></i> School
+                                            Auditorium</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-item mb-4 pb-3 border-bottom">
+                                <div class="d-flex">
+                                    <div class="date-box bg-secondary text-white text-center me-3">
+                                        <div class="month">Jul</div>
+                                        <div class="day">15</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Annual Sports Day</h5>
+                                        <p class="mb-1 text-muted"><i class="far fa-clock me-1"></i> 8:00 AM - 4:00 PM
+                                        </p>
+                                        <p class="mb-0 text-muted"><i class="fas fa-map-marker-alt me-1"></i> School
+                                            Ground</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="d-flex">
+                                    <div class="date-box bg-secondary text-white text-center me-3">
+                                        <div class="month">Aug</div>
+                                        <div class="day">02</div>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Independence Day Celebration</h5>
+                                        <p class="mb-1 text-muted"><i class="far fa-clock me-1"></i> 8:00 AM - 10:00 AM
+                                        </p>
+                                        <p class="mb-0 text-muted"><i class="fas fa-map-marker-alt me-1"></i> School
+                                            Premises</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-outline-secondary">View Full Calendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Highlights Section -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5" data-aos="fade-up">Achievements & Highlights</h2>
+            <div class="row g-4">
+                <!-- Achievement Card 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100 text-center py-4">
+                        <div class="card-body">
+                            <div class="achievement-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3 class="text-primary mb-2">95%</h3>
+                            <h5 class="mb-3">Pass Rate 2023</h5>
+                            <p class="px-3">Our students achieved a 95% pass rate in the national examinations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100 text-center py-4">
+                        <div class="card-body">
+                            <div class="achievement-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="text-primary mb-2">25+</h3>
+                            <h5 class="mb-3">National Awards</h5>
+                            <p class="px-3">Recognized with over 25 national awards for academic excellence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100 text-center py-4">
+                        <div class="card-body">
+                            <div class="achievement-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="text-primary mb-2">500+</h3>
+                            <h5 class="mb-3">Successful Graduates</h5>
+                            <p class="px-3">Over 500 students graduated and enrolled in top universities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 4 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div
+                                class="col-md-4 bg-primary text-white d-flex align-items-center justify-content-center p-4">
+                                <i class="fas fa-star fa-3x"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top 10 National Ranking</h5>
+                                    <p class="card-text">Consistently ranked among the top 10 schools in the country for
+                                        academic performance.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 5 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div
+                                class="col-md-4 bg-secondary text-white d-flex align-items-center justify-content-center p-4">
+                                <i class="fas fa-globe-americas fa-3x"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">International Recognition</h5>
+                                    <p class="card-text">Awarded the International School Excellence Award for 3
+                                        consecutive years.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY PREVIEW -->
+    <section id="facilities" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Gallery Preview</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/G1.jpeg" class="card-img-top" alt="Science Lab" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Science Labs</h5>
+                            <p class="card-text">Fully equipped physics, chemistry and biology labs for practical
+                                learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/G2.jpeg" class="card-img-top" alt="Library" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Library</h5>
+                            <p class="card-text">Extensive collection of books, journals and digital resources.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/G3.jpeg" class="card-img-top" alt="Sports" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports Complex</h5>
+                            <p class="card-text">Indoor and outdoor facilities for various sports and physical
+                                activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">What Parents Say</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="text-center p-4">
+                                    <img src="assets/43.jpg" class="rounded-circle mb-3" width="80" alt="Parent" loading="lazy">
+                                    <p class="lead mb-3">"Bright Future Academy has provided my child with an excellent
+                                        learning environment. The teachers are dedicated and the curriculum is
+                                        well-structured."</p>
+                                    <h5>Sarah Johnson</h5>
+                                    <p class="text-muted">Parent of Grade 7 student</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="text-center p-4">
+                                    <img src="assets/32.jpg" class="rounded-circle mb-3" width="80" alt="Parent" loading="lazy">
+                                    <p class="lead mb-3">"I'm impressed with how the school balances academics with
+                                        extracurricular activities. My daughter has grown tremendously in confidence."
+                                    </p>
+                                    <h5>Michael Chen</h5>
+                                    <p class="text-muted">Parent of Grade 10 student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h3 class="mb-4">Get In Touch</h3>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt me-3 text-primary"></i>
+                            <p class="mb-0">123 Education Street, Learning City, LC 12345</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone-alt me-3 text-primary"></i>
+                            <p class="mb-0">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <p class="mb-0">info@brightfuture.edu</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <!-- Added Google Maps Embed -->
+
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Map Section -->
+    <section id="location-map" class="py-4">
+        <div class="container">
+            <h3 class="text-center mb-4">Find Us</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="compact-map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?width=600&amp;height=300&amp;hl=en&amp;q=Sant%20Longowal&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            class="compact-map-frame" aria-label="School location map" loading="lazy" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="#contact" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-directions me-1"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Bright Future Academy
+                    </h5>
+                    <p>Committed to excellence in education and the holistic development of every student.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#academics">Academics</a>
+                        <a href="#facilities">Facilities</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Academics</h5>
+                    <div class="footer-links">
+                        <a href="#">Admissions</a>
+                        <a href="#">Curriculum</a>
+                        <a href="#">School Calendar</a>
+                        <a href="#">Exam Schedule</a>
+                        <a href="#">Results</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for school updates and news.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Bright Future Academy. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links d-inline">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before your existing script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
