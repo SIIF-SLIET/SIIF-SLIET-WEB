@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Bright Future Academy</title>
-    <meta name="description" content="Learn about Bright Future Academy's history, mission, leadership, and educational philosophy that shapes future leaders.">
+    <title>About Us | SIIF SLIET</title>
+    <meta name="description"
+        content="Learn about Bright Future Academy's history, mission, leadership, and educational philosophy that shapes future leaders.">
     <!-- Reuse existing CSS links from index.html -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -17,13 +18,13 @@
 </head>
 
 <body>
-    <!-- Header (reused from homepage with active state) -->
+    <!-- Header reused -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <i class="fas fa-graduation-cap me-2"></i>
-                    Bright Future Academy
+                    SIFF SLIET
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -31,29 +32,46 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Academic.html">Academics</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Teacher.html">Faculty</a>
+
+
+                        <li class="nav-item dropdown" id="sectorDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-robot me-2"></i>AI and
+                                        Agriculture</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-laptop-code me-2"></i>Technology</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-heartbeat me-2"></i>Healthcare</a></li>
+                            </ul>
                         </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Announcement</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="Event.html">Events</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact US.html">Contact</a>
-                        </li>
+
                         <li class="nav-item ms-lg-3">
                             <a class="btn btn-sm btn-primary" href="#">
-                                <i class="fas fa-user-graduate me-1"></i> Apply Now
+                                <i class="fas fa-envelope me-1"></i> Contact
                             </a>
                         </li>
                     </ul>
@@ -62,13 +80,14 @@
         </nav>
     </header>
 
+
     <!-- Hero Banner -->
     <section class="about-hero">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold mb-3">About Our School</h1>
-                    <p class="lead mb-4">Shaping future leaders through excellence in education since 1995</p>
+                    <h1 class="display-4 fw-bold mb-3">About SIIF SLIET</h1>
+                    <p class="lead mb-4">Empowering Rural Wellness through Tech-enabled Innovation</p>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -85,33 +104,38 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                    <img src="assets/Ab1.jpeg" alt="Bright Future Academy campus" class="img-fluid rounded shadow-lg" loading="lazy">
+                    <img src="assets/Ab1.jpeg" alt="Bright Future Academy campus" class="img-fluid rounded shadow-lg"
+                        loading="lazy">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="mb-4">Our Story</h2>
-                    <p>Established in 1995, Bright Future Academy was founded by a group of visionary educators committed to providing quality education with a focus on holistic development.</p>
-                    <p>What began as a small institution with just 50 students has grown into one of the region's most respected educational institutions, serving over 1,500 students today.</p>
-                    
+                    <p>Founded with a vision to foster innovation and rural development, SIIF SLIET stands as a
+                        dedicated platform nurturing grassroots entrepreneurs, student innovators, and rural technology
+                        advancements.</p>
+                    <p>What started as a focused initiative within SLIET has evolved into a thriving center of
+                        innovation, supporting over 200+ projects and startups, empowering communities, and driving
+                        sustainable development through technology and collaboration.</p>
+
                     <div class="school-facts mt-4">
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <div class="fact-box bg-primary text-white p-3 rounded text-center">
-                                    <h3 class="mb-0">25+</h3>
-                                    <p class="mb-0">Years of Excellence</p>
+                                    <h3 class="mb-0">10+</h3>
+                                    <p class="mb-0">Years of Innovation</p>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <div class="fact-box bg-secondary text-white p-3 rounded text-center">
-                                    <h3 class="mb-0">1500+</h3>
-                                    <p class="mb-0">Students</p>
+                                    <h3 class="mb-0">200+</h3>
+                                    <p class="mb-0">Innovative Projects Supported</p>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-3">
+                            <!-- <div class="col-md-4 mb-3">
                                 <div class="fact-box bg-accent text-white p-3 rounded text-center">
                                     <h3 class="mb-0">10 Acre</h3>
                                     <p class="mb-0">Campus</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -125,10 +149,10 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
                     <h2 class="mb-3">Our Guiding Principles</h2>
-                    <p class="lead">The foundation of everything we do at Bright Future Academy</p>
+                    <p class="lead">The foundation of innovation and rural empowerment at SIIF SLIET</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="card h-100 border-0 shadow-sm">
@@ -137,11 +161,13 @@
                                 <i class="fas fa-bullseye fa-2x"></i>
                             </div>
                             <h3>Mission</h3>
-                            <p>To provide a nurturing environment that fosters academic excellence, character development, and lifelong learning, empowering students to become responsible global citizens.</p>
+                            <p>To foster innovation, entrepreneurship, and rural development by empowering students,
+                                innovators, and communities through sustainable technologies and collaborative
+                                initiatives.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
@@ -149,11 +175,12 @@
                                 <i class="fas fa-eye fa-2x"></i>
                             </div>
                             <h3>Vision</h3>
-                            <p>To be recognized as a premier educational institution that develops innovative thinkers and ethical leaders who will shape a better future for all.</p>
+                            <p>To be recognized as a leading innovation hub driving grassroots entrepreneurship, rural
+                                advancement, and student-led innovations for a better, self-reliant future.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
@@ -162,11 +189,11 @@
                             </div>
                             <h3>Core Values</h3>
                             <ul class="values-list text-start">
-                                <li>Excellence in Learning</li>
-                                <li>Integrity & Ethics</li>
-                                <li>Respect for All</li>
                                 <li>Innovation & Creativity</li>
-                                <li>Community Engagement</li>
+                                <li>Sustainability & Social Impact</li>
+                                <li>Rural Empowerment</li>
+                                <li>Integrity & Ethics</li>
+                                <li>Excellence in Solutions</li>
                             </ul>
                         </div>
                     </div>
@@ -181,21 +208,27 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="principal-photo text-center">
-                        <img src="assets/principle.jpeg" alt="Dr. Sarah Williams, Principal" class="img-fluid rounded shadow-lg mb-3" loading="lazy">
-                        <h4>Dr. Sarah Williams</h4>
-                        <p class="text-muted">Principal</p>
+                        <img src="assets/principle.jpeg" alt="Prof. Mani Kant Paswan"
+                            class="img-fluid rounded shadow-lg mb-3" loading="lazy">
+                        <h4>Prof. Mani Kant Paswan</h4>
+                        <p class="text-muted">Director</p>
                     </div>
                 </div>
                 <div class="col-lg-8" data-aos="fade-left">
-                    <h2 class="mb-4">Message from Our Principal</h2>
+                    <h2 class="mb-4">Message from Our Director</h2>
                     <blockquote class="blockquote">
-                        <p class="mb-4">"At Bright Future Academy, we believe every child is unique and possesses immense potential. Our dedicated faculty works tirelessly to create an environment where students can discover their passions, develop critical thinking skills, and grow into well-rounded individuals.</p>
-                        <p class="mb-4">Education is not just about academic achievement; it's about nurturing character, fostering creativity, and building resilience. We take pride in our diverse community where students learn to respect differences and work collaboratively.</p>
-                        <p>I invite you to explore our website and discover what makes Bright Future Academy a special place for learning and growth."</p>
+                        <p class="mb-4">"At SIIF SLIET, we believe innovation has the power to transform lives,
+                            especially in rural communities. Our goal is to empower students, entrepreneurs, and
+                            innovators to develop sustainable solutions that address real-world challenges.</p>
+                        <p class="mb-4">Beyond technology, we focus on building a culture of creativity, collaboration,
+                            and ethical leadership. Through our dedicated mentorship and supportive environment, we
+                            encourage every innovator to think boldly and work towards meaningful impact.</p>
+                        <p>I invite you to explore SIIF SLIET and become part of our journey in shaping a self-reliant,
+                            innovative India."</p>
                     </blockquote>
-                    <div class="principal-signature mt-4">
-                        <img src="assets/signature.png" alt="Dr. Sarah Williams' signature" class="img-fluid" style="height: 50px;" loading="lazy">
-                    </div>
+                    <!-- <div class="principal-signature mt-4">
+                        <img src="assets/signature.png" alt="Prof. Mani Kant Paswan" class="img-fluid" style="height: 50px;" loading="lazy">
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -203,11 +236,11 @@
 
     <!-- Leadership & Governance -->
     <section class="py-5 bg-light">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
                     <h2 class="mb-3">Our Leadership Team</h2>
-                    <p class="lead">Experienced educators guiding our institution</p>
+                    <p class="lead">Visionaries driving innovation and rural empowerment</p>
                 </div>
             </div>
             
@@ -216,9 +249,9 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="assets/leader1.jpeg" class="card-img-top" alt="Mr. Robert Johnson, Chairman" loading="lazy">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Mr. Robert Johnson</h5>
-                            <p class="text-muted">Chairman</p>
-                            <p class="card-text">With over 30 years in education, Mr. Johnson provides strategic direction for the institution.</p>
+                            <h5 class="card-title">[Director’s Name]</h5>
+                            <p class="text-muted">Director, SIIF SLIET</p>
+                            <p class="card-text">Leading the foundation with a focus on innovation, entrepreneurship, and rural development.</p>
                         </div>
                     </div>
                 </div>
@@ -227,9 +260,9 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="assets/leader2.jpeg" class="card-img-top" alt="Dr. Sarah Williams, Principal" loading="lazy">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Dr. Sarah Williams</h5>
-                            <p class="text-muted">Principal</p>
-                            <p class="card-text">PhD in Education with 20+ years experience leading academic institutions.</p>
+                            <h5 class="card-title">[Coordinator’s Name]</h5>
+                            <p class="text-muted">Innovation Coordinator</p>
+                            <p class="card-text">Specializing in project incubation and student entrepreneurship, guiding innovators from idea to impact.</p>
                         </div>
                     </div>
                 </div>
@@ -238,11 +271,48 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="assets/leader3.jpeg" class="card-img-top" alt="Ms. Priya Patel, Vice Principal" loading="lazy">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Ms. Priya Patel</h5>
-                            <p class="text-muted">Vice Principal</p>
-                            <p class="card-text">Specializes in curriculum development and student welfare programs.</p>
+                            <h5 class="card-title">[Manager’s Name]</h5>
+                            <p class="text-muted">Program Manager</p>
+                            <p class="card-text">Overseeing rural technology initiatives and startup support programs, fostering community engagement.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Our Leadership Team</h2>
+                    <p class="lead">Visionaries driving innovation and rural empowerment</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Leader Card -->
+                <div class="col-md-3 text-center" data-aos="fade-up">
+                    <div class="circle-card">
+                        <img src="assets/leader1.jpeg" alt="Director" class="leader-img">
+                    </div>
+                    <h5 class="mt-3">[Director’s Name]</h5>
+                    <p class="text-muted small">Director, SIIF SLIET</p>
+                </div>
+
+                <!-- Leader Card -->
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="circle-card">
+                        <img src="assets/leader2.jpeg" alt="Coordinator" class="leader-img">
+                    </div>
+                    <h5 class="mt-3">[Coordinator’s Name]</h5>
+                    <p class="text-muted small">Innovation Coordinator</p>
+                </div>
+
+                <!-- Leader Card -->
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="circle-card">
+                        <img src="assets/leader3.jpeg" alt="Manager" class="leader-img">
+                    </div>
+                    <h5 class="mt-3">[Manager’s Name]</h5>
+                    <p class="text-muted small">Program Manager</p>
                 </div>
             </div>
         </div>
@@ -254,11 +324,11 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
                     <h2 class="mb-3">Accreditations & Affiliations</h2>
-                    <p class="lead">Recognized by leading educational bodies</p>
+                    <p class="lead">Recognized by leading national and innovation bodies</p>
                 </div>
             </div>
-            
-            <div class="row g-4 justify-content-center">
+
+            <!-- <div class="row g-4 justify-content-center">
                 <div class="col-md-3 col-6" data-aos="fade-up">
                     <div class="accreditation-logo p-4 d-flex align-items-center justify-content-center">
                         <img src="assets/CBSE-Black.svg" alt="CBSE Affiliation" class="img-fluid" loading="lazy">
@@ -293,7 +363,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -303,10 +373,10 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
                     <h2 class="mb-3">Our Culture & Environment</h2>
-                    <p class="lead">Where students thrive beyond academics</p>
+                    <p class="lead">Where innovators thrive beyond technology</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-6" data-aos="fade-right">
                     <div class="culture-card p-4 h-100 bg-white rounded shadow-sm">
@@ -316,12 +386,13 @@
                             </div>
                             <div>
                                 <h4>Inclusive Community</h4>
-                                <p>We celebrate diversity and foster an environment where every student feels valued and supported.</p>
+                                <p>We promote collaboration and diversity, creating a space where every
+                                    innovator’s ideas are respected and valued.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="culture-card p-4 h-100 bg-white rounded shadow-sm">
                         <div class="d-flex">
@@ -329,13 +400,14 @@
                                 <i class="fas fa-paint-brush fa-2x text-primary"></i>
                             </div>
                             <div>
-                                <h4>Arts & Creativity</h4>
-                                <p>Our robust arts program encourages creative expression through visual arts, music, and theater.</p>
+                                <h4>Innovation & Creativity</h4>
+                                <p>From grassroots projects to high-tech solutions, creativity is at the heart
+                                    of every initiative at SIIF.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
                     <div class="culture-card p-4 h-100 bg-white rounded shadow-sm">
                         <div class="d-flex">
@@ -343,13 +415,14 @@
                                 <i class="fas fa-running fa-2x text-primary"></i>
                             </div>
                             <div>
-                                <h4>Athletics & Wellness</h4>
-                                <p>Comprehensive sports programs promote physical health, teamwork, and sportsmanship.</p>
+                                <h4>Entrepreneurial Mindset</h4>
+                                <p>We nurture problem-solvers who think like entrepreneurs, ready to drive
+                                    real-world impact.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
                     <div class="culture-card p-4 h-100 bg-white rounded shadow-sm">
                         <div class="d-flex">
@@ -357,8 +430,9 @@
                                 <i class="fas fa-hands-helping fa-2x text-primary"></i>
                             </div>
                             <div>
-                                <h4>Community Service</h4>
-                                <p>Students engage in meaningful service projects that develop empathy and social responsibility.</p>
+                                <h4>Community Engagement</h4>
+                                <p>Our focus on rural empowerment ensures that innovations lead to meaningful
+                                    change in local communities.</p>
                             </div>
                         </div>
                     </div>
@@ -372,17 +446,17 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-4">Experience Bright Future Academy</h2>
-                    <p class="lead mb-5">Discover what makes our school community special</p>
+                    <h2 class="mb-4">Experience SIIF SLIET</h2>
+                    <p class="lead mb-5">Discover what makes our innovation community unique</p>
                     <div class="d-flex flex-wrap justify-content-center">
                         <a href="contact.html" class="btn btn-primary mx-2 mb-2">
-                            <i class="fas fa-calendar-alt me-2"></i> Schedule a Visit
+                            <i class="fas fa-calendar-alt me-2"></i> Collaborate with Us
                         </a>
                         <a href="index.html#academics" class="btn btn-outline-primary mx-2 mb-2">
-                            <i class="fas fa-book-open me-2"></i> Explore Academics
+                            <i class="fas fa-book-open me-2"></i> Explore Innovations
                         </a>
                         <a href="#" class="btn btn-outline-primary mx-2 mb-2">
-                            <i class="fas fa-chalkboard-teacher me-2"></i> Meet Our Faculty
+                            <i class="fas fa-chalkboard-teacher me-2"></i> Meet Our Mentors
                         </a>
                     </div>
                 </div>
@@ -447,11 +521,13 @@
         </div>
     </footer>
 
+
     <!-- Scripts (reused from homepage) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
         // Initialize AOS
         AOS.init({
