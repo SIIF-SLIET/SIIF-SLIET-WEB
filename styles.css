@@ -2616,7 +2616,7 @@ footer {
 
 
 
-/* Location Icon Styles */
+/* Location Icon Styles    Programs Overview section css */
 .location-icon-wrapper {
     position: relative;
     width: 40px;
@@ -2689,6 +2689,130 @@ footer {
 
 
 
+/* Academics Programs Section */
+.program-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon-wrapper {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-icon-bg {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.program-card:hover .program-icon-bg {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.4);
+}
+
+.program-icon-bg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    z-index: -1;
+    animation: pulse 2s infinite;
+    opacity: 0.6;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.program-card h3 {
+    color: #2c3e50;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.program-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+}
+
+.program-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.program-highlight {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover .program-highlight {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+/* Different icon colors for each card */
+.program-card:nth-child(1) .program-icon-bg {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+}
+.program-card:nth-child(2) .program-icon-bg {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+.program-card:nth-child(3) .program-icon-bg {
+    background: linear-gradient(135deg, #e74c3c, #e67e22);
+}
+.program-card:nth-child(4) .program-icon-bg {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
 
 
 
@@ -2698,6 +2822,8 @@ footer {
 
 
 
+
+/* Aditya Raj modify about page css */
 .circle-card {
     display: inline-block;
     padding: 10px;
