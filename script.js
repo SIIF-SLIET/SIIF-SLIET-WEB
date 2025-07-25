@@ -370,3 +370,59 @@ function initializeNewsTicker() {
 }
 
 document.addEventListener('DOMContentLoaded', initializeNewsTicker);
+
+
+
+
+
+//newsletter.html srcipt
+// Newsletter Page Specific Scripts
+if (document.querySelector('.newsletter-hero')) {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Form submission handling
+    const subscribeForm = document.querySelector('#subscribe form');
+    if (subscribeForm) {
+        subscribeForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Show success message
+            const successAlert = document.createElement('div');
+            successAlert.className = 'alert alert-success mt-4';
+            successAlert.innerHTML = `
+                <i class="fas fa-check-circle me-2"></i>
+                Thank you for subscribing to our newsletter! You'll receive our next edition in your inbox.
+            `;
+            
+            // Insert after form
+            this.parentNode.insertBefore(successAlert, this.nextSibling);
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to show message
+            successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    }
+    
+    // Archive item hover effects
+    const archiveItems = document.querySelectorAll('.archive-item');
+    archiveItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateX(5px)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateX(0)';
+        });
+    });
+}

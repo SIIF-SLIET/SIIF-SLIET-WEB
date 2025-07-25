@@ -3039,7 +3039,7 @@ footer {
     .featured-news-img {
         height: 200px;
     }
-    
+
     .news-img-container {
         height: 150px;
     }
@@ -3049,13 +3049,228 @@ footer {
     .featured-news-img {
         height: 180px;
     }
-    
+
     .event-item {
         padding: 5px;
     }
-    
+
     .event-meta span {
         display: block;
         margin-bottom: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/*newsletter.html css*/
+/* Newsletter Page Styles */
+.newsletter-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+        url('assets/newsletter-hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 150px 0 100px;
+    text-align: center;
+    margin-top: 56px;
+    position: relative;
+}
+
+.newsletter-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.newsletter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.newsletter-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.newsletter-card:hover .newsletter-img img {
+    transform: scale(1.05);
+}
+
+.newsletter-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.newsletter-content h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.newsletter-card:hover .newsletter-content h3 {
+    color: var(--secondary-color);
+}
+
+/* MADAD Stats Section */
+.madad-stats {
+    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(52, 152, 219, 0.9)),
+        url('assets/madad-bg.jpg') center/cover no-repeat;
+    padding: 80px 0;
+    position: relative;
+}
+
+.madad-stats h2 {
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Subscribe Section */
+.subscribe-card {
+    transition: all 0.3s ease;
+}
+
+.subscribe-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Archive Section */
+.archive-year {
+    position: relative;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.archive-year:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.archive-list {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.archive-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.archive-item:last-child {
+    border-bottom: none;
+}
+
+.archive-item:hover {
+    background-color: #f8f9fa;
+}
+
+.archive-date {
+    width: 80px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.archive-title {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.archive-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .newsletter-hero {
+        padding: 120px 0 80px;
+    }
+    
+    .archive-item {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .archive-date {
+        width: 100%;
+    }
+    
+    .archive-title {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .archive-actions {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .newsletter-img {
+        height: 150px;
+    }
+    
+    .archive-item {
+        padding: 10px;
+    }
+    
+    .archive-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
