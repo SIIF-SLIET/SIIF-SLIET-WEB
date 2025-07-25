@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | SIIF SLIET</title>
-    <meta name="description" content="Discover upcoming events, activities, and important dates at Bright Future Academy.">
+    <meta name="description"
+        content="Discover upcoming events, activities, and important dates at Bright Future Academy.">
     <!-- Reuse existing CSS links from index.html -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -23,7 +24,7 @@
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <i class="fas fa-graduation-cap me-2"></i>
-                   SIIF SLIET
+                    SIIF SLIET
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -81,84 +82,257 @@
     </section>
 
     <!-- Upcoming Events Section -->
+   <!-- Events Tab Section (with 3 buttons) -->
     <section class="py-5">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-4">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-3">Upcoming Events</h2>
-                    <p class="lead">Mark your calendars for these important dates</p>
+                    <h2 class="mb-3">Events</h2>
+                    <p class="lead">Discover our vibrant calendar of academic, cultural, and sports activities</p>
                 </div>
             </div>
-            
-            <div class="row g-4">
-                <!-- Event 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="event-card h-100">
-                        <div class="event-date bg-primary text-white">
-                            <div class="event-day">15</div>
-                            <div class="event-month">Jul</div>
-                        </div>
-                        <img src="assets/Parents-Teachers Meeting.jpg" class="event-img" alt="Parents-Teachers Meeting">
-                        <div class="event-content">
-                            <div class="event-category">Academic</div>
-                            <h3 class="event-title">Parents-Teachers Meeting</h3>
-                            <div class="event-meta">
-                                <span><i class="far fa-clock me-1"></i> 9:00 AM - 12:00 PM</span>
-                                <span><i class="fas fa-map-marker-alt me-1"></i> School Auditorium</span>
+
+            <!-- Toggle Buttons -->
+            <div class="d-flex justify-content-center mb-4 gap-2">
+                <button id="btnUpcoming" class="btn btn-primary active" type="button">Upcoming Events</button>
+                <button id="btnPast" class="btn btn-outline-primary" type="button">Past Events</button>
+                <button id="btnAll" class="btn btn-outline-primary" type="button">All Events</button>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <div id="upcomingEventsSection">
+                <div class="row g-4">
+                    <!-- Event 1 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-primary text-white">
+                                <div class="event-day">15</div>
+                                <div class="event-month">Jul</div>
                             </div>
-                            <p class="event-description">Quarterly meeting to discuss student progress and academic plans with teachers and parents.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            <img src="assets/Parents-Teachers Meeting.jpg" class="event-img"
+                                alt="Parents-Teachers Meeting">
+                            <div class="event-content">
+                                <div class="event-category">Academic</div>
+                                <h3 class="event-title">Parents-Teachers Meeting</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 9:00 AM - 12:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Auditorium</span>
+                                </div>
+                                <p class="event-description">Quarterly meeting to discuss student progress and academic
+                                    plans with teachers and parents.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Event 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="event-card h-100">
-                        <div class="event-date bg-secondary text-white">
-                            <div class="event-day">20</div>
-                            <div class="event-month">Jul</div>
-                        </div>
-                        <img src="assets/Annual Sports Day1.jpg" class="event-img" alt="Annual Sports Day">
-                        <div class="event-content">
-                            <div class="event-category">Sports</div>
-                            <h3 class="event-title">Annual Sports Day</h3>
-                            <div class="event-meta">
-                                <span><i class="far fa-clock me-1"></i> 8:00 AM - 4:00 PM</span>
-                                <span><i class="fas fa-map-marker-alt me-1"></i> School Ground</span>
+                    <!-- Event 2 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-secondary text-white">
+                                <div class="event-day">20</div>
+                                <div class="event-month">Jul</div>
                             </div>
-                            <p class="event-description">A day full of athletic competitions and team spirit for all grades.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            <img src="assets/Annual Sports Day1.jpg" class="event-img" alt="Annual Sports Day">
+                            <div class="event-content">
+                                <div class="event-category">Sports</div>
+                                <h3 class="event-title">Annual Sports Day</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 8:00 AM - 4:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Ground</span>
+                                </div>
+                                <p class="event-description">A day full of athletic competitions and team spirit for all
+                                    grades.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Event 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="event-card h-100">
-                        <div class="event-date bg-accent text-white">
-                            <div class="event-day">02</div>
-                            <div class="event-month">Aug</div>
-                        </div>
-                        <img src="assets/Independence Day Celebration.jpg" class="event-img" alt="Independence Day Celebration">
-                        <div class="event-content">
-                            <div class="event-category">Cultural</div>
-                            <h3 class="event-title">Independence Day Celebration</h3>
-                            <div class="event-meta">
-                                <span><i class="far fa-clock me-1"></i> 8:00 AM - 10:00 AM</span>
-                                <span><i class="fas fa-map-marker-alt me-1"></i> School Premises</span>
+                    <!-- Event 3 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-accent text-white">
+                                <div class="event-day">02</div>
+                                <div class="event-month">Aug</div>
                             </div>
-                            <p class="event-description">Patriotic celebrations with flag hoisting, cultural performances, and speeches.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            <img src="assets/Independence Day Celebration.jpg" class="event-img"
+                                alt="Independence Day Celebration">
+                            <div class="event-content">
+                                <div class="event-category">Cultural</div>
+                                <h3 class="event-title">Independence Day Celebration</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 8:00 AM - 10:00 AM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Premises</span>
+                                </div>
+                                <p class="event-description">Patriotic celebrations with flag hoisting, cultural
+                                    performances, and speeches.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-calendar-alt me-2"></i> View Full Calendar
-                </a>
+
+            <!-- Past Events Section -->
+            <div id="pastEventsSection" style="display:none;">
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Science Fair.jpg" alt="Science Fair 2023">
+                                <div class="past-event-date">May 15, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Science Fair 2023</h3>
+                                <p>Students showcased innovative projects and experiments at our annual science fair.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Annual Day Celebration.jpg" alt="Annual Day Celebration">
+                                <div class="past-event-date">Apr 28, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Annual Day Celebration</h3>
+                                <p>Colorful cultural performances marked our 28th Annual Day celebrations.</p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Graduation Ceremony.jpg" alt="Graduation Ceremony">
+                                <div class="past-event-date">Mar 10, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Graduation Ceremony</h3>
+                                <p>Class of 2023 celebrated their achievements at the graduation ceremony.</p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTH (All) Events Section -->
+            <div id="allEventsSection" style="display:none;">
+                <div class="row g-4">
+                    <!-- UPCOMING EVENTS (copy same block as above) -->
+                    <!-- Event 1 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-primary text-white">
+                                <div class="event-day">15</div>
+                                <div class="event-month">Jul</div>
+                            </div>
+                            <img src="assets/Parents-Teachers Meeting.jpg" class="event-img"
+                                alt="Parents-Teachers Meeting">
+                            <div class="event-content">
+                                <div class="event-category">Academic</div>
+                                <h3 class="event-title">Parents-Teachers Meeting</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 9:00 AM - 12:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Auditorium</span>
+                                </div>
+                                <p class="event-description">Quarterly meeting to discuss student progress and academic
+                                    plans with teachers and parents.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-secondary text-white">
+                                <div class="event-day">20</div>
+                                <div class="event-month">Jul</div>
+                            </div>
+                            <img src="assets/Annual Sports Day1.jpg" class="event-img" alt="Annual Sports Day">
+                            <div class="event-content">
+                                <div class="event-category">Sports</div>
+                                <h3 class="event-title">Annual Sports Day</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 8:00 AM - 4:00 PM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Ground</span>
+                                </div>
+                                <p class="event-description">A day full of athletic competitions and team spirit for all
+                                    grades.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-card h-100">
+                            <div class="event-date bg-accent text-white">
+                                <div class="event-day">02</div>
+                                <div class="event-month">Aug</div>
+                            </div>
+                            <img src="assets/Independence Day Celebration.jpg" class="event-img"
+                                alt="Independence Day Celebration">
+                            <div class="event-content">
+                                <div class="event-category">Cultural</div>
+                                <h3 class="event-title">Independence Day Celebration</h3>
+                                <div class="event-meta">
+                                    <span><i class="far fa-clock me-1"></i> 8:00 AM - 10:00 AM</span>
+                                    <span><i class="fas fa-map-marker-alt me-1"></i> School Premises</span>
+                                </div>
+                                <p class="event-description">Patriotic celebrations with flag hoisting, cultural
+                                    performances, and speeches.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PAST EVENTS (copy same as above) -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Science Fair.jpg" alt="Science Fair 2023">
+                                <div class="past-event-date">May 15, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Science Fair 2023</h3>
+                                <p>Students showcased innovative projects and experiments at our annual science fair.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Annual Day Celebration.jpg" alt="Annual Day Celebration">
+                                <div class="past-event-date">Apr 28, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Annual Day Celebration</h3>
+                                <p>Colorful cultural performances marked our 28th Annual Day celebrations.</p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="past-event-card">
+                            <div class="past-event-img">
+                                <img src="assets/Graduation Ceremony.jpg" alt="Graduation Ceremony">
+                                <div class="past-event-date">Mar 10, 2023</div>
+                            </div>
+                            <div class="past-event-content">
+                                <h3>Graduation Ceremony</h3>
+                                <p>Class of 2023 celebrated their achievements at the graduation ceremony.</p>
+                                <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                        class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,7 +346,7 @@
                     <p class="lead">Explore our diverse range of school events</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3" data-aos="fade-up">
                     <div class="category-card text-center p-4 h-100">
@@ -184,7 +358,7 @@
                         <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="category-card text-center p-4 h-100">
                         <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
@@ -195,7 +369,7 @@
                         <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="category-card text-center p-4 h-100">
                         <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
@@ -206,7 +380,7 @@
                         <a href="#" class="btn btn-sm btn-outline-primary">View Events</a>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="category-card text-center p-4 h-100">
                         <div class="category-icon bg-primary bg-opacity-10 text-primary mx-auto mb-3">
@@ -230,7 +404,7 @@
                     <p class="lead">Relive memorable moments from our recent events</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="past-event-card">
@@ -241,11 +415,12 @@
                         <div class="past-event-content">
                             <h3>Science Fair 2023</h3>
                             <p>Students showcased innovative projects and experiments at our annual science fair.</p>
-                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="past-event-card">
                         <div class="past-event-img">
@@ -255,11 +430,12 @@
                         <div class="past-event-content">
                             <h3>Annual Day Celebration</h3>
                             <p>Colorful cultural performances marked our 28th Annual Day celebrations.</p>
-                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="past-event-card">
                         <div class="past-event-img">
@@ -269,12 +445,13 @@
                         <div class="past-event-content">
                             <h3>Graduation Ceremony</h3>
                             <p>Class of 2023 celebrated their achievements at the graduation ceremony.</p>
-                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i class="fas fa-chevron-right ms-1"></i></a>
+                            <a href="#" class="btn btn-sm btn-link ps-0">View Photos <i
+                                    class="fas fa-chevron-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-4">
                 <a href="gallery.html" class="btn btn-outline-primary">
                     <i class="fas fa-images me-2"></i> View More in Gallery
@@ -292,18 +469,20 @@
                     <p class="lead">Browse our events by month</p>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="calendar-container bg-white p-4 rounded shadow-sm">
                         <div class="calendar-header d-flex justify-content-between align-items-center mb-4">
                             <h3 class="mb-0">July 2023</h3>
                             <div>
-                                <button class="btn btn-sm btn-outline-secondary me-2"><i class="fas fa-chevron-left"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary me-2"><i
+                                        class="fas fa-chevron-left"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary"><i
+                                        class="fas fa-chevron-right"></i></button>
                             </div>
                         </div>
-                        
+
                         <div class="calendar-grid">
                             <div class="calendar-weekdays">
                                 <div>Sun</div>
@@ -314,7 +493,7 @@
                                 <div>Fri</div>
                                 <div>Sat</div>
                             </div>
-                            
+
                             <div class="calendar-days">
                                 <div class="empty-day"></div>
                                 <div class="empty-day"></div>
@@ -359,7 +538,7 @@
                                 <div class="calendar-day">31</div>
                             </div>
                         </div>
-                        
+
                         <div class="calendar-legend mt-4">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="event-dot bg-primary me-2"></div>
@@ -469,17 +648,17 @@
             easing: 'ease-in-out',
             once: true
         });
-        
+
         // Simple calendar navigation (for demo purposes)
         document.querySelectorAll('.calendar-header button').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 alert('In a complete implementation, this would navigate between months.');
             });
         });
-        
+
         // Event day click handler
         document.querySelectorAll('.event-day').forEach(day => {
-            day.addEventListener('click', function() {
+            day.addEventListener('click', function () {
                 const eventDate = this.textContent.trim();
                 alert(`Showing details for event on July ${eventDate}`);
             });
