@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - SIIF SLIET</title>
+    <!-- Add these in the head section after your other CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    SIIF SLIET
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown" id="sectorDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sector
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-robot me-2"></i>AI and
+                                        Agriculture</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-laptop-code me-2"></i>Technology</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-heartbeat me-2"></i>Healthcare</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Event.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="newsletter.html">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Announcement</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-sm btn-primary" href="#">
+                                <i class="fas fa-envelope me-1"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Newsletter Hero Section -->
+    <section class="newsletter-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">SIIF SLIET Newsletter</h1>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">Stay updated with our latest
+                        innovations, achievements, and upcoming events</p>
+                    <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#subscribe" class="btn btn-primary btn-lg px-4">
+                            <i class="fas fa-envelope me-2"></i> Subscribe
+                        </a>
+                        <a href="#featured" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-newspaper me-2"></i> Latest Edition
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Newsletters -->
+    <section id="featured" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Featured Newsletters</h2>
+                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Explore our most recent publications
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Newsletter 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="newsletter-card">
+                        <div class="newsletter-img">
+                            <img src="assets/Agri.png" alt="Newsletter Cover" class="img-fluid" loading="lazy">
+                            <div class="newsletter-badge">Latest</div>
+                        </div>
+                        <div class="newsletter-content p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary">June 2023</span>
+                                <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> June 15, 2023</small>
+                            </div>
+                            <h3 class="mb-3">Innovation Digest Vol. 5</h3>
+                            <p class="mb-4">Highlighting our recent AI breakthroughs in agriculture and upcoming
+                                hackathon events.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read Online</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary p-0">Download PDF <i
+                                        class="fas fa-download ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="newsletter-card">
+                        <div class="newsletter-img">
+                            <img src="assets/project.png" alt="Newsletter Cover" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="newsletter-content p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary">May 2023</span>
+                                <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> May 10, 2023</small>
+                            </div>
+                            <h3 class="mb-3">Tech Horizons Vol. 4</h3>
+                            <p class="mb-4">Showcasing student projects and our collaboration with industry partners.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read Online</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary p-0">Download PDF <i
+                                        class="fas fa-download ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="newsletter-card">
+                        <div class="newsletter-img">
+                            <img src="assets/Research Report.jpg" alt="Newsletter Cover" class="img-fluid"
+                                loading="lazy">
+                        </div>
+                        <div class="newsletter-content p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary">April 2023</span>
+                                <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> April 5, 2023</small>
+                            </div>
+                            <h3 class="mb-3">Research Review Vol. 3</h3>
+                            <p class="mb-4">Featuring our faculty publications and upcoming research symposium details.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read Online</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary p-0">Download PDF <i
+                                        class="fas fa-download ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#archive" class="btn btn-primary px-4">
+                    <i class="fas fa-archive me-2"></i> View All Editions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MADAD Stats Section -->
+    <section class="madad-stats py-5 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="mb-4">SIIF Initiative Impact</h2>
+                    <p class="lead mb-4">Our flagship project is transforming lives through technology. Here's what
+                        we've achieved so far:</p>
+                    <a href="#" class="btn btn-outline-light">
+                        <i class="fas fa-info-circle me-2"></i> Learn More About SIIF
+                    </a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="stat-card bg-primary bg-opacity-25 p-4 rounded text-center">
+                                <div class="stat-icon mb-3">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <h3 class="stat-number mb-0">1,250+</h3>
+                                <p class="mb-0">Beneficiaries Served</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card bg-primary bg-opacity-25 p-4 rounded text-center">
+                                <div class="stat-icon mb-3">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <h3 class="stat-number mb-0">25+</h3>
+                                <p class="mb-0">Communities Reached</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card bg-primary bg-opacity-25 p-4 rounded text-center">
+                                <div class="stat-icon mb-3">
+                                    <i class="fas fa-hand-holding-heart fa-2x"></i>
+                                </div>
+                                <h3 class="stat-number mb-0">500+</h3>
+                                <p class="mb-0">Essential Services Delivered</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card bg-primary bg-opacity-25 p-4 rounded text-center">
+                                <div class="stat-icon mb-3">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>
+                                <h3 class="stat-number mb-0">2,400+</h3>
+                                <p class="mb-0">Hours Volunteered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="subscribe-card bg-light p-4 p-md-5 rounded-3 shadow-sm">
+                        <div class="text-center mb-5">
+                            <h2 class="mb-3">Stay Informed</h2>
+                            <p class="lead">Subscribe to receive our monthly newsletter directly to your inbox</p>
+                        </div>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="updatesCheck">
+                                    <label class="form-check-label" for="updatesCheck">
+                                        Also send me occasional updates about SIIF events and opportunities
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary w-100 py-3">
+                                    <i class="fas fa-paper-plane me-2"></i> Subscribe Now
+                                </button>
+                            </div>
+                            <div class="col-12 text-center">
+                                <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section id="archive" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Newsletter Archive</h2>
+                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Browse our past editions</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Year 2023 -->
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="archive-year mb-4">2023</h3>
+                    <div class="archive-list">
+                        <div class="archive-item">
+                            <div class="archive-date">June 15</div>
+                            <div class="archive-title">Innovation Digest Vol. 5</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="archive-item">
+                            <div class="archive-date">May 10</div>
+                            <div class="archive-title">Tech Horizons Vol. 4</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="archive-item">
+                            <div class="archive-date">April 5</div>
+                            <div class="archive-title">Research Review Vol. 3</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="archive-item">
+                            <div class="archive-date">March 8</div>
+                            <div class="archive-title">Women in Tech Special</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 2022 -->
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="archive-year mb-4">2022</h3>
+                    <div class="archive-list">
+                        <div class="archive-item">
+                            <div class="archive-date">December 15</div>
+                            <div class="archive-title">Year in Review</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="archive-item">
+                            <div class="archive-date">October 20</div>
+                            <div class="archive-title">Hackathon Highlights</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                        <div class="archive-item">
+                            <div class="archive-date">August 5</div>
+                            <div class="archive-title">Summer Research Edition</div>
+                            <div class="archive-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                                <a href="#" class="btn btn-sm btn-link text-primary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-outline-primary px-4">
+                    <i class="fas fa-history me-2"></i> Load More Archives
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Readers Say</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-img-container">
+                                <img src="assets/WhatsApp Image 2025-07-25 at 13.00.55_8d612317.jpg"
+                                    alt="Reader testimonial" class="testimonial-img" loading="lazy">
+                            </div>
+                            <p class="testimonial-text">"The SIIF newsletter keeps me informed about cutting-edge
+                                research and student projects. I always find something inspiring in each edition."</p>
+                            <div class="testimonial-author">
+                                <strong>Dr. Priya Sharma</strong>
+                                <span>Professor, Computer Science</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-img-container">
+                                <img src="assets/leader2.jpeg" alt="Reader testimonial" class="testimonial-img"
+                                    loading="lazy">
+                            </div>
+                            <p class="testimonial-text">"As an industry partner, the newsletter helps me stay connected
+                                with SIIF's innovations and identify potential collaboration opportunities."</p>
+                            <div class="testimonial-author">
+                                <strong>Rajiv Malhotra</strong>
+                                <span>TechCorp India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-img-container">
+                                <img src="assets/Dr. Meena Kapoor.jpg" alt="Reader testimonial" class="testimonial-img"
+                                    loading="lazy">
+                            </div>
+                            <p class="testimonial-text">"I love reading about the real-world impact of student projects.
+                                The SIIF updates are particularly heartwarming and inspiring."</p>
+                            <div class="testimonial-author">
+                                <strong>Ananya Patel</strong>
+                                <span>Alumni</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="mb-3">Ready to stay connected with SIIF?</h2>
+                    <p class="lead mb-0">Subscribe to our newsletter for the latest updates on innovations, events, and
+                        student achievements.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#subscribe" class="btn btn-light btn-lg px-4">
+                        <i class="fas fa-envelope me-2"></i> Subscribe Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        SIIF SLIET
+                    </h5>
+                    <p>SIIF SLIET is an AI-focused IT company solving real-world problems, with its project "SIIF"
+                        aiding the elderly in accessing essential services.</p>
+
+                    <div class="location-info mt-3 d-flex align-items-center">
+                        <div class="location-icon-wrapper me-3">
+                            <i class="fas fa-map-marker-alt location-icon"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">SLIET INNOVATION AND INCUBATION FOUNDATION</h6>
+                            <p class="mb-0 small">Institute Innovation Cell (IIC), SLIET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="Event.html">Events</a>
+                        <a href="newsletter.html">Newsletter</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Resources</h5>
+                    <div class="footer-links">
+                        <a href="#">Blog</a>
+                        <a href="#">Research Papers</a>
+                        <a href="#">Student Projects</a>
+                        <a href="#">Annual Reports</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 SIFF SLIET. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links d-inline">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before your existing script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
